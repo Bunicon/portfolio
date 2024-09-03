@@ -1,0 +1,105 @@
+@import url(./styles/1-header.css);
+@import url(./styles/2-intro.css);
+@import url(./styles/3-main.css);
+@import url(./styles/4-about.css);
+@import url(./styles/5-skills.css);
+@import url(./styles/6-project.css);
+@import url(./styles/7-contact.css);
+@import url(./styles/8-footer.css);
+
+/* 웹 폰트 로드 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+/* ===== 변수 구간 ===== */
+:root {
+  --color-main: #043152;
+  --color-sub: #FFBC40;
+  --color-dark: #2F4858;
+  --color-light-bd: #FFE6D6;
+  --color-light-bg: #F7F6F2;
+  --color-header-background:#20202099;
+
+  --font-code: 'Nanum Gothic Coding', monospace;;
+  
+  --font-size-title: 180px;
+  --font-size-subtitle: 40px;
+  --font-size-bigtext: 30px;
+  --font-size-logo: 28px;
+  --font-size-tag: 26px;
+  --font-size-larger: 22px;
+  --font-size-text: 18px;
+  --font-size-header-title: 24px;
+
+
+  --height-toolbar: 7rem;
+}
+
+/* ===== 리셋 구간 ===== */
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  /* 개발용 설정 */
+  min-height: 150vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong, em {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl { margin: 0; }
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th { font-weight: normal; }
+
+address { font-style: inherit; }
+
+/* 스크린 리더 */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* 스크롤이 부드럽게 이동 */
+html{
+  scroll-behavior: smooth;
+}

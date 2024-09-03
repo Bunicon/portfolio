@@ -1,0 +1,11 @@
+footer{
+  background-color: var(--color-main);
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+}
+@media (max-width: 768px) {
+}
+@media (min-width: 769px) {
+  
+}
